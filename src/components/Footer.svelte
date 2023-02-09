@@ -25,11 +25,14 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.footer__tagline {
 		font-size: 20px;
+		line-height: 1.1;
 		color: var(--capgemini-blue);
 		font-weight: 300;
+		margin-block-end: 0;
 	}
 </style>

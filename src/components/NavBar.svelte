@@ -12,6 +12,11 @@
 		<li class="nav-bar__item">
 			<a class="nav-bar__link" href="/faq">FAQ</a>
 		</li>
+		<li class="nav-bar__item">
+			<a class="nav-bar__link" href="/account">
+				<i class="bi bi-person-circle" />
+			</a>
+		</li>
 	</ul>
 </nav>
 
