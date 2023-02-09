@@ -4,6 +4,8 @@
 	import DayGrid from '@event-calendar/day-grid';
 	import '@event-calendar/core/index.css';
 
+	import HeadTitle from '../../components/HeadTitle.svelte';
+
 	const pageTitle = 'Calendar';
 
 	let plugins = [TimeGrid, DayGrid];
@@ -15,8 +17,9 @@
 	};
 </script>
 
+<HeadTitle {pageTitle} />
+
 <svelte:head>
-	<title>{pageTitle}</title>
 	<meta name="description" content="Build your time tracking patterns here" />
 </svelte:head>
 

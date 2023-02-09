@@ -1,6 +1,9 @@
 <script>
+	import HeadTitle from '../../components/HeadTitle.svelte';
 	const pageTitle = 'Pattern Builder';
 </script>
+
+<HeadTitle {pageTitle} />
 
 <svelte:head>
 	<title>{pageTitle}</title>
