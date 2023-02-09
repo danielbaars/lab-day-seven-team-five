@@ -6,7 +6,7 @@
     import DayGrid from '@event-calendar/day-grid';
     import rawData from './data.js';
 
-    console.log(rawData)
+    const data = rawData.pattern
     let plugins = [TimeGrid, DayGrid];
     let options = {
         view: 'dayGridMonth',
@@ -24,17 +24,21 @@
     }
 
     function setEvents(patternDate) {
-      let days = [];
-        for (let i = 0; i < 7; ++i) {
-            let day = new Date();
-            let diff = i - day.getDay();
-            day.setDate(day.getDate() + diff);
-            days[i] = formatDate(day);
-        }
-        
-        return [
-            // {start: , end: days[3], resourceId: 1, title: "All-day events can be displayed at the top", color: "#B29DD9", allDay: true}
-        ];
+        let days = [];
+            data.forEach(week => {
+                for (const day in week) {
+                    // console.log(week[day]);
+                    week[day].forEach(part => {
+                        console.log(part)
+                        for(let i = 0; i < 90; i++) {
+                            let date = new Date()
+                            console.log(date.getDay() + i)
+                            days.push({start: "2019-1-1", end: '2019-1-1', resourceId: 1, title: "All-day events can be displayed at the top", color: "#B29DD9", allDay: true})
+                        }
+                    })
+                }
+            });
+        return days
     }
     
     function formatDate(day) {
@@ -49,5 +53,5 @@
 </script>
 
 
-<button on:click={setEvents}>Change slot duration</button>
+<!-- <button on:click={setEvents}>Change slot duration</button> -->
 <Calendar {plugins} {options} />
