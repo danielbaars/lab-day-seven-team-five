@@ -1,5 +1,5 @@
 <script>
-	import hourglass from '$lib/images/hourglass-at-about-halfway.jpg';
+	import hourglass from '$lib/images/hourglass-at-about-halfway-1600px.jpg';
 	import HeadTitle from '../components/HeadTitle.svelte';
 	const pageTitle = 'Home';
 </script>
