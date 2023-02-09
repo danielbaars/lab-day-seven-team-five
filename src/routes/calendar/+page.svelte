@@ -4,7 +4,7 @@
     import Calendar from '@event-calendar/core';
     import TimeGrid from '@event-calendar/time-grid';
     import DayGrid from '@event-calendar/day-grid';
-    import rawData from './data.js';
+    import rawData, { dates } from './data.js';
 
     const data = rawData.pattern
     let plugins = [TimeGrid, DayGrid];
@@ -25,21 +25,30 @@
 
     function setEvents(patternDate) {
         let days = [];
+        let date = new Date()
+        for (let i = 0; i < 10; i++) {
             data.forEach(week => {
                 for (const day in week) {
-                    // console.log(week[day]);
                     week[day].forEach(part => {
-                        console.log(part)
-                        for(let i = 0; i < 90; i++) {
-                            let date = new Date()
-                            let diff = i - date.getDay();
-                            date.setDate(date.getDate() + diff);
                             
-                            days.push({start: "2019-1-1", end: '2019-1-1', resourceId: 1, title: "All-day events can be displayed at the top", color: "#B29DD9", allDay: true})
-                        }
+                            let diff = date.getDay();
+                            date.setDate(date.getDate() + diff);
+                            let finalDate = formatDate(date)
+                            console.log(finalDate)
+                            days.push({start: finalDate, end: finalDate, resourceId: 1, title: part.klantnaam, color: "#B29DD9"})
                     })
                 }
             });
+        }
+//        let days2 = dates.map((day, i) => {
+//     return {
+//         start: day,
+//         end: day,
+//         title: data.pattern[0][Object.keys(data.pattern[0])[i]].name,
+//         color: data.pattern[0][Object.keys(data.pattern[0])[i]].color
+//     }
+// })
+
         return days
     }
     
