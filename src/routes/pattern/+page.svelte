@@ -1,6 +1,6 @@
 <script>
 	import ClientPicker from '../../components/client-picker.svelte';
-	import Weekselector from '../../components/WeekSelector.svelte';
+
 	import HeadTitle from '../../components/HeadTitle.svelte';
 	const pageTitle = 'Pattern Builder';
 </script>
@@ -14,5 +14,3 @@
 
 <h1 class="page-title">{pageTitle}</h1>
 <ClientPicker />
-<Weekselector />
-<Weekselector pattern={[2, 3, 4, 5, 6]} />
