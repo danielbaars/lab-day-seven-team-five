@@ -1,6 +1,6 @@
 <script>
 	const dateSettings = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-	const navLang = window.navigator.language;
+	const navLang = 'nl-NL';
 
 	let clients = [
 		{
