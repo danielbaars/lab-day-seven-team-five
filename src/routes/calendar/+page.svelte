@@ -1,0 +1,16 @@
+<script>
+    import Calendar from '@event-calendar/core';
+    import TimeGrid from '@event-calendar/time-grid';
+    import DayGrid from '@event-calendar/day-grid';
+    import '@event-calendar/core/index.css';
+
+    let plugins = [TimeGrid, DayGrid];
+    let options = {
+        view: 'dayGridMonth',
+        events: [
+            // your list of events
+        ]
+    };
+</script>
+
+<Calendar {plugins} {options} />
