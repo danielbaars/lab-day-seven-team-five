@@ -41,10 +41,4 @@
 		line-height: 1.1;
 		font-weight: 600;
 	}
-
-	.header__tagline {
-		font-size: 25px;
-		font-weight: 300;
-		margin-block-end: 0;
-	}
 </style>
