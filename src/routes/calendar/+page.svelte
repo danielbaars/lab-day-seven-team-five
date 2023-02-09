@@ -32,7 +32,9 @@
                         console.log(part)
                         for(let i = 0; i < 90; i++) {
                             let date = new Date()
-                            console.log(date.getDay() + i)
+                            let diff = i - date.getDay();
+                            date.setDate(date.getDate() + diff);
+                            
                             days.push({start: "2019-1-1", end: '2019-1-1', resourceId: 1, title: "All-day events can be displayed at the top", color: "#B29DD9", allDay: true})
                         }
                     })
