@@ -14,3 +14,9 @@
 		<h2 class="header__tagline">Time tracking for the 21st century</h2>
 	</div>
 </header>
+
+<footer class="footer">
+	<div class="footer__inner container py-5">
+		<img src="capgemini-logo.svg" alt="Capgemini logo" />
+	</div>
+</footer>

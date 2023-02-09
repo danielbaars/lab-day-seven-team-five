@@ -1,9 +1,13 @@
-@import '@fontsource/open-sans';
+@import '@fontsource/ubuntu/300.css';
+@import '@fontsource/ubuntu/300-italic.css';
+@import '@fontsource/ubuntu/400-italic.css';
+@import '@fontsource/ubuntu/500.css';
+@import '@fontsource/ubuntu/700.css';
 
 :root {
 	--capgemini-blue: #0070ad;
 	--capgemini-grey: #ececec;
-	--bs-body-font-family: 'Open Sans', sans-serif;
+	--bs-body-font-family: 'Ubuntu', sans-serif;
 }
 
 .header {
@@ -27,7 +31,11 @@
 }
 
 .header__tagline {
-	font-size: 23px;
+	font-size: 25px;
 	font-weight: 300;
 	margin-block-end: 0;
+}
+
+.footer {
+	background-color: var(--capgemini-grey);
 }
