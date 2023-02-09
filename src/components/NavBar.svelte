@@ -4,13 +4,18 @@
 			<a class="nav-bar__link" href="/">Home</a>
 		</li>
 		<li class="nav-bar__item">
-			<a class="nav-bar__link" href="/pattern-builder">Pattern Builder</a>
+			<a class="nav-bar__link" href="/pattern">Pattern Builder</a>
 		</li>
 		<li class="nav-bar__item">
 			<a class="nav-bar__link" href="/calendar">Calendar</a>
 		</li>
 		<li class="nav-bar__item">
 			<a class="nav-bar__link" href="/faq">FAQ</a>
+		</li>
+		<li class="nav-bar__item">
+			<a class="nav-bar__link" href="/account">
+				<i class="bi bi-person-circle" />
+			</a>
 		</li>
 	</ul>
 </nav>

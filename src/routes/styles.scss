@@ -1,4 +1,3 @@
-@import '@fontsource/open-sans';
 @import 'calendar/calendar.scss';
 
 :root {
@@ -9,4 +8,5 @@
 
 .page-title {
 	color: var(--capgemini-blue);
+	margin-block-end: 24px;
 }

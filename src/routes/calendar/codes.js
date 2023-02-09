@@ -5,7 +5,7 @@ const codes = [
 		code: 'rks123',
 		startDate: '2023-01-01',
 		endDate: '2024-01-01',
-		color: 'red'
+		color: '#8FCBE7'
 	},
 	{
 		name: 'Portal project',
@@ -13,7 +13,7 @@ const codes = [
 		code: 'log12345',
 		startDate: '2023-01-01',
 		endDate: '2024-01-01',
-		color: 'blue'
+		color: '#39870C'
 	},
 	{
 		name: 'APS Microservices project',
@@ -21,6 +21,6 @@ const codes = [
 		code: 'jmb12345',
 		startDate: '2023-01-01',
 		endDate: '2024-01-01',
-		color: 'cyan'
+		color: '#EEB617'
 	}
 ];
