@@ -10,6 +10,16 @@
 </svelte:head>
 
 <div>
+	<h1 class="page-title">Team</h1>
+	<h4>
+		<ul>
+			<li class="mb-4">Daniel, Jordy, Kyle, Stijn, Arjan & Mo</li>
+			<li class="mb-4">Svelte</li>
+		</ul>
+	</h4>
+</div>
+
+<div>
 	<h1 class="page-title">Core Features</h1>
 	<h4>
 		<ul>
