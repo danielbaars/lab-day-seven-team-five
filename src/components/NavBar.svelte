@@ -10,7 +10,7 @@
 			<a class="nav-bar__link" href="/calendar">Calendar</a>
 		</li>
 		<li class="nav-bar__item">
-			<a class="nav-bar__link" href="/faq">FAQ</a>
+			<a class="nav-bar__link" href="/faq">Core Features</a>
 		</li>
 		<li class="nav-bar__item">
 			<a class="nav-bar__link" href="/account">

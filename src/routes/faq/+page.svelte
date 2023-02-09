@@ -1,6 +1,6 @@
 <script>
 	import HeadTitle from '../../components/HeadTitle.svelte';
-	const pageTitle = 'FAQ';
+	const pageTitle = 'Core Features';
 </script>
 
 <HeadTitle {pageTitle} />
@@ -9,4 +9,15 @@
 	<meta name="description" content="The most commonly asked questions about Better Clarity" />
 </svelte:head>
 
-<h1 class="page-title">{pageTitle}</h1>
+<div>
+	<h1 class="page-title">Core Features</h1>
+	<h4>
+		<ul>
+			<li class="mb-4">Make a pattern for a project code</li>
+			<li class="mb-4">Patterns are applied automatically</li>
+			<li class="mb-4">Get email notification for confirmation</li>
+			<li class="mb-5">Add changes with an <strong>email reply</strong></li>
+			<li class="mb-4">Never open Clarity again</li>
+		</ul>
+	</h4>
+</div>
