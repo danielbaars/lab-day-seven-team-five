@@ -3,14 +3,27 @@
 	const navLang = window.navigator.language;
 
 	let clients = [
-		{ id: 1, name: `Politie`, dateFrom: new Date(), dateTill: addWeeks(new Date(), 13) },
+		{
+			id: 1,
+			name: `Politie`,
+			dateFrom: new Date(),
+			dateTill: addWeeks(new Date(), 13),
+			pattern: [[8, 8, 8, 8, 0], [8, 8, 8, 8, 8]]
+		},
 		{
 			id: 2,
 			name: `Ministerie van Buitenlandse Zaken`,
 			dateFrom: new Date(),
-			dateTill: addWeeks(new Date(), 10)
+			dateTill: addWeeks(new Date(), 10),
+			pattern: [[0,0,0,0, 8], [0, 0, 0, 0, 0]]
 		},
-		{ id: 3, name: `Mediq`, dateFrom: new Date(), dateTill: addWeeks(new Date(), 8) }
+		{
+			id: 3,
+			name: `Mediq`,
+			dateFrom: new Date(),
+			dateTill: addWeeks(new Date(), 8),
+			pattern: [[0, 8, 4, 8, 8]]
+		}
 	];
 	function addWeeks(date, weeks) {
 		date.setDate(date.getDate() + 7 * weeks);
@@ -20,7 +33,7 @@
 
 	function handleChange() {
 		// Push selected client to store
-		console.log(`Changed client to ${selected.name}`);
+		console.log(selected);
 	}
 </script>
 
